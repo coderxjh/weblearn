@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>简化对象写法</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        // ES6允许在对象的大括号内直接写入变量和函数作为对象的属性和方法
+        // 变量和函数
+        let name = "訾博";
+        let change = function () {
+            console.log("活着就是为了改变世界！");
+        }
+        //创建对象
+        const school = {
+            // 完整写法
+            // name:name,
+            // change:change
+            // 简化写法
+            name,
+            change,
+            // 声明方法的简化
+            say() {
+                console.log(`${name}言行一致！`);
+            }
+        }
+        school.change();
+        school.say();
+    </script>
+</body>
+
+</html>

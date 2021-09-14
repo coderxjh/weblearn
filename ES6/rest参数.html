@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>rest参数</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        //ES6 引入rest参数，用于获取函数的实参，用来代替arguments
+        //ES5 获取实参的方式
+        function data1() {
+            console.log(arguments);
+        }
+
+        //rest 参数
+        function data(...args) {
+            console.log(args);
+        }
+        data('白芷', '阿娇', '思慧');
+        data1('白芷', '阿娇', '思慧');
+
+        //rest 参数必须要放在参数最后
+        function fn(a,b,...args){   
+            console.log(a);
+            console.log(b);
+            console.log(args);
+        }
+        fn(1,2,3,4,5)
+    </script>
+</body>
+
+</html>
