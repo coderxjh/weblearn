@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>生成器函数声明与调用</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        // 生成器其实就是一个特殊的函数
+        // 异步编程 纯回调函数  
+        // yield：函数代码分隔符
+        function* gen() {
+            // console.log(111);
+            yield '一只没有耳朵';
+            // console.log(222);
+            yield '一只没有尾巴';
+            // console.log(333);
+            yield '真奇怪';
+            // console.log("hello  generator");
+        }
+        let iterator = gen();
+        console.log(iterator);
+        console.log(iterator.next());
+        console.log(iterator.next());
+        console.log(iterator.next());
+        console.log(iterator.next());
+
+        // console.log("遍历：");
+
+        // 遍历
+        // for (const i of iterator) {
+        //     console.log(i);
+        // }
+    </script>
+</body>
+
+</html>

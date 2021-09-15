@@ -16,19 +16,19 @@
         }
 
         //rest 参数
-        function data(...args) {
+        const data=(...args)=> {
             console.log(args);
         }
         data('白芷', '阿娇', '思慧');
         data1('白芷', '阿娇', '思慧');
 
         //rest 参数必须要放在参数最后
-        function fn(a,b,...args){   
-            console.log(a);
-            console.log(b);
-            console.log(args);
-        }
-        fn(1,2,3,4,5)
+        // function fn(a,b,...args){   
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(args);
+        // }
+        // fn(1,2,3,4,5)
     </script>
 </body>
 
