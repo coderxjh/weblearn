@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class静态成员</title>
+</head>
+
+<body>
+    <script>
+        // class静态成员
+        // ES5写法
+        // 函数对象
+        function Phone() {}
+        Phone.name = '手机';
+        Phone.change = function () {
+            console.log("我可以改变世界");
+        }
+        Phone.prototype.size = '5.5inch';
+        // 实例对象
+        let nokia = new Phone(); 
+        console.log(nokia, name);        
+        nokia.change();
+        console.log(nokia.size);
+        // 注意：实例对象和函数对象的属性是不相通的
+
+        // ES6
+        class Phone{
+            // 静态属性
+            static name="手机";
+            static change(){
+                console.log("我可以改变世界");
+            }
+        }
+
+        let nokia = new Phone();
+        console.log(nokia.name);
+        console.log(Phone.name);
+        Phone.change();
+    </script>
+</body>
+
+</html>
