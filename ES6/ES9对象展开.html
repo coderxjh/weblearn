@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象展开</title>
+</head>
+
+<body>
+    <script>
+        // Rest参数
+        function connect({ host, port, ...user }) {
+            console.log(host);
+            console.log(port);
+            console.log(user);
+        }
+
+        connect({
+            host: '127.0.0.1',
+            port: 3306,
+            username: 'root',
+            password: 'root',
+            type: 'master'
+        });
+
+        // 对象的扩展运算符
+        const skillOne = {
+            q1: '天音波',
+            q2: '回音击'
+        }
+        const skillTwo = {
+            w1: '金钟罩',
+            w2: '铁布衫',
+        }
+        const skillThree = {
+            e1: '天雷破',
+        }
+        const skillFour = {
+            r: '猛龙摆尾',
+        }
+        const mangseng = { ...skillOne, ...skillTwo, ...skillThree, ...skillFour };
+        console.log(mangseng);
+    </script>
+</body>
+
+</html>

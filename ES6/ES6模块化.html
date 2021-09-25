@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6模块化</title>
+</head>
+
+<body>
+    <script type="module">
+        // 1. 通用导入方式
+        // 引入m1.js 模块内容
+        import * as m1 from "./js/m1.js";
+        // 引入m2.js 模块内容
+        import * as m2 from "./js/m2.js";
+        // 引入m3.js 模块内容
+        import * as m3 from "./js/m3.js";
+        console.log(m1);
+        m3.default.change();
+        console.log(m3.default.school);
+
+        // 2. 解构赋值形式
+        // import { school, teach } from "./js/m1.js";
+        // // 重名的可以使用别名
+        // import { school as xuexiao, findJob } from "./js/m2.js";
+        // // 导入默认导出的模块，必须使用别名
+        // import { default as one } from "./js/m3.js";
+
+        // // 3. 简便模式  针对默认暴露
+        // import m3 from "./js/m3.js";
+        
+    </script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>

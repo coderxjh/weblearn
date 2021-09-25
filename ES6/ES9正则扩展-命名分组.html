@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正则扩展-命名捕获分组</title>
+</head>
+
+<body>
+    <script>
+        // 正则扩展：命名捕获分组
+        // 声明一个字符串
+        let str = '<a href="http://wwww.atguigu.com">尚硅谷</a>';
+        // 提取 url 与 标签文本
+        const reg = /<a href="(.*)">(.*)<\/a>/;
+        // 执行
+        const result = reg.exec(str);
+        console.log(result);
+        // 结果是一个数组，第一个元素是所匹配的所有字符串
+        // 第二个元素是第一个(.*)匹配到的字符串
+        // 第三个元素是第二个(.*)匹配到的字符串
+        // 我们将此称之为捕获
+        console.log(result[1]);
+        console.log(result[2]);
+
+        // 命名捕获分组
+        const reg1 = /<a href="(?<url>.*)">(?<text>.*)<\/a>/;
+        const result1 = reg1.exec(str);
+        console.log(result1);
+        // 这里的结果多了一个groups
+        // groups:
+        // text:"訾博"
+        // url:"http://www.baidu.com"
+        console.log(result1.groups.url);
+        console.log(result1.groups.text);
+    </script>
+</body>
+
+</html>
