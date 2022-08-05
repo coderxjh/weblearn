@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拦截器</title>
+    <script src="./node_modules/axios/dist/mine-axios.js"></script>
+</head>
+<body>
+<script>
+    // 构造函数
+    function Axios(config) {
+        this.config = config;
+        this.interceptors = {
+            request: new InterceptorManager(),
+            response: new InterceptorManager()
+        }
+    }
+
+    function dispatchRequest(config) {
+        // 返回一个promise对象
+        return new Promise((resolve, reject) => {
+            resolve({
+                status: 200,
+                statusText: 'OK'
+            });
+        });
+    }
+
+    // 发送请求
+    Axios.prototype.request = function (config) {
+        // 创建一个promise对象
+        let promise = Promise.resolve(config);
+        // 创建一个数组
+        const chains = [dispatchRequest, undefined];
+        // 处理拦截器
+        // 请求拦截器 将请求拦截器的回调 压入到chains的前面 request.handles=[]
+        this.interceptors.request.handlers.forEach(value => {
+            //将相应拦截器压入数组的最尾部
+            chains.unshift(value.fulfilled, value.rejected);
+        });
+        // 响应拦截器
+        this.interceptors.response.handlers.forEach(value => {
+            chains.push(value.fulfilled, value.rejected);
+        });
+
+        // 遍历
+        while (chains.length) {
+            promise = promise.then(chains.shift(), chains.shift());
+        }
+        return promise;
+    }
+
+    // 创建实例
+    let context = new Axios({});
+    // 创建axios函数
+    let axios = Axios.prototype.request.bind(context);
+    // 将context属性config interceptors 添加至axios函数对象上
+    Object.keys(context).forEach(key => {
+        axios[key] = context[key];
+    })
+
+
+    // 拦截器管理器构造函数
+    function InterceptorManager() {
+        this.handlers = [];
+    }
+
+    InterceptorManager.prototype.use = function (fulfilled, rejected) {
+        this.handlers.push({
+            fulfilled: fulfilled,
+            rejected: rejected
+        });
+    }
+
+
+    // 设置一个请求拦截器
+    axios.interceptors.request.use(function (config) {
+        console.log('请求拦截器 成功 - 1号');
+        config.params = {a: 100};
+        return config;
+        // throw '参数出了问题';
+    }, function (error) {
+        console.log('请求拦截器 失败 - 1号');
+        return Promise.reject(error);
+    });
+
+    axios.interceptors.request.use(function (config) {
+        console.log('请求拦截器 成功 - 2号');
+        console.log(config);
+        return config;
+    }, function (error) {
+        console.log('请求拦截器 失败 - 2号');
+        return Promise.reject(error);
+    });
+
+    // 设置响应拦截器
+    axios.interceptors.response.use(function (response) {
+        console.log('响应拦截器 成功 - 1号');
+        return response;
+    }, function (error) {
+        console.log('响应拦截器 失败 - 1号');
+        return Promise.reject(error);
+    });
+
+    axios.interceptors.response.use(function (response) {
+        console.log('响应拦截器 成功 - 2号');
+        return response;
+    }, function (error) {
+        console.log('响应拦截器 失败 - 2号');
+        return Promise.reject(error);
+    });
+
+    axios({
+        method: 'get',
+        url: 'http://xiao.com'
+    }).then(response => {
+        console.log('自定义成功的回调');
+        console.log(response);
+    }).catch(reason => {
+        console.log('自定义失败的回调');
+    });
+
+</script>
+</body>
+</html>
