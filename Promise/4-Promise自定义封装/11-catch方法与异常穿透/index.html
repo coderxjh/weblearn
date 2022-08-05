@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise-封装 | 11 - catch 方法与异常穿透</title>
+    <script src="./promise.js"></script>
+</head>
+<body>
+<script>
+    //实例化对象
+    let p = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // reject('error');
+            resolve('ok');
+        }, 1000);
+    });
+    //值传递
+    let then1 = p.then(value => {
+        console.log(111);
+        throw 'error'
+    });
+    let then2 = then1.then(value => {
+        console.log(222);
+    });
+    let then3 = then2.then(value => {
+        console.log(333);
+    });
+    let catch1 = then3.catch(reason => {
+        console.warn(reason);
+    });
+    console.log(then1);
+    console.log(then2);
+    console.log(then3);
+    console.log(catch1);
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let p1 = new Promise((resolve, reject) => {
+        resolve('OK');
+    });
+    let p2 = Promise.resolve('Success');
+    let p3 = Promise.reject('Oh Yeah');
+    const result = Promise.all([p1, p2, p3]);
+    console.log(result);
+</script>
+</body>
+</html>
