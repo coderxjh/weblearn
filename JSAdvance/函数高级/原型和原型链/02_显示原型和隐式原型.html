@@ -17,7 +17,7 @@
     //创建实例对象
     var fn = new Fn();  //内部语句：this.__proto__=Fn.prototype
     console.log(fn.__proto__)
-    //3.实例对象的隐式原型的值为其对应构造函数的显示原型的值
+    //3.实例对象的隐式原型的值为其对应构造函数的显式原型的值
     console.log(fn.__proto__ === Fn.prototype);
 
     //给原型添加方法

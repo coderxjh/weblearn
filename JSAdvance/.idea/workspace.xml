@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27eb6670-65bf-465c-b838-76885166dddf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/函数高级/作用域与作用域链/01_作用域.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/作用域与作用域链/01_作用域.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/作用域与作用域链/02_作用域与执行上下文.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/作用域与作用域链/02_作用域与执行上下文.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/作用域与作用域链/03_作用域链.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/作用域与作用域链/03_作用域链.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/作用域与作用域链/04_作用域_面试题.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/作用域与作用域链/04_作用域_面试题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/原型和原型链/01_原型(prototype).html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/原型和原型链/01_原型(prototype).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/原型和原型链/02_显示原型和隐式原型.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/原型和原型链/02_显示原型和隐式原型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/01_变量提升与函数提升.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/01_变量提升与函数提升.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/02_执行上下文.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/02_执行上下文.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/03_执行上下文栈.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/03_执行上下文栈.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/04_执行上下文栈2.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/04_执行上下文栈2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/05_面试题.html" beforeDir="false" afterPath="$PROJECT_DIR$/函数高级/执行上下文与执行上下文栈/05_面试题.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/对象创建模式/01_Object构造函数模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/对象创建模式/01_Object构造函数模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/对象创建模式/02_对象字面量.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/对象创建模式/02_对象字面量.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/对象创建模式/03_工厂模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/对象创建模式/03_工厂模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/对象创建模式/04_自定义构造函数模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/对象创建模式/04_自定义构造函数模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/对象创建模式/05_构造函数+原型的组合模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/对象创建模式/05_构造函数+原型的组合模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/继承模式/01_原型链继承.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/继承模式/01_原型链继承.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/继承模式/02_借用构造函数继承.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/继承模式/02_借用构造函数继承.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/对象高级/继承模式/03_组合继承.html" beforeDir="false" afterPath="$PROJECT_DIR$/对象高级/继承模式/03_组合继承.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Bpmuk6eVGT4e94menRZRcZ82lY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Weblearn/Axios",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Weblearn\JSAdvance\函数高级\作用域与作用域链" />
+      <recent name="D:\Weblearn\JSAdvance\函数高级\执行上下文与执行上下文栈" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27eb6670-65bf-465c-b838-76885166dddf" name="Changes" comment="" />
+      <created>1657611625414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657611625414</updated>
+      <workItem from="1657611626932" duration="70000" />
+      <workItem from="1657611724850" duration="5763000" />
+      <workItem from="1657778400204" duration="16740000" />
+      <workItem from="1657888092470" duration="593000" />
+      <workItem from="1658068353767" duration="757000" />
+      <workItem from="1658664215233" duration="1057000" />
+      <workItem from="1659501783503" duration="1192000" />
+      <workItem from="1659530837810" duration="593000" />
+      <workItem from="1659590468393" duration="4749000" />
+      <workItem from="1659685476682" duration="11311000" />
+      <workItem from="1659777642429" duration="862000" />
+      <workItem from="1659800424656" duration="40000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
